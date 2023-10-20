@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/beb3340081.js" crossorigin="anonymous"></script>
+    <title>Pedro Teche Dev Web</title>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/logo-pedro_Prancheta 1.svg">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Desenvolvedor Back-end</p>
+                <h1>Olá, Eu sou o <span>Pedro</span><br>Teche</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------About----------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/imagem02_site.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre Mim</h1>
+                    <p>Olá novamente,meu nome é Pedro Henrique Teche Fontoura,sou desenvolvedor back-end,uso a linguagem Node Js para programar o back-end e uso banco de dados MongoDB,desde criança sou fascinado por computadores,minha paixão é programar,adoro desenvolver sistemas back-end,há anos venho estudando programação,estou sempre tentando aprender mais,passo há maior parte do tempo programando e estudando.Se você estiver interessado em um Back-end para sua aplicação entre em contato pelo E-mail,pode ter certeza que vou ficar feliz em te ajudar.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                        <!---<p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>----->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Back-end</span><br>Node Js</li>
+                            <li><span>Banco de Dados</span><br>MongoDB</li>
+                            <!---<li><span>App Development</span><br>Building Android/IOS apps</li>---->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <!---<li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>---->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                           <!----<li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore/li>----->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------Services------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Meus Serviços</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Back-end</h2>
+                    <p>Vou desenvolver o Back-end para sua aplicação.</p>
+                    <!---<a href="#">Learn More</a>--->
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Banco de dados</h2>
+                    <p>Vou desenvolver o banco de dados para sua aplicação.</p>
+                    <!---<a href="#">Learn More</a>--->
+                </div>
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h2>Deploy</h2>
+                    <p>Vou fazer o deploy da sua aplicação.</p>
+                    <!---<a href="#">Learn More</a>--->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------Portfolio----------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Meus Trabalhos</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/apirestful3.png">
+                    <div class="layer">
+                        <h3>APIRESTful</h3>
+                        <p>APIRESTful desenvolvida com Nodejs + Express + MongoDB,Confira o codigo no Github no link abaixo.</p>
+                        <a href="https://github.com/PedroTche/APIRESTFUL"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/jwtauth.png">
+                    <div class="layer">
+                        <h3>JWT Authentication</h3>
+                        <p>JWT Authentication desenvolvido com Node js + Express + MongoDB + Bcrypt + JsonWebToken,Confira o codigo no Github no link abaixo.</p>
+                        <a href="https://github.com/PedroTche/JWTAuth"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/chat.png">
+                    <div class="layer">
+                        <h3>Chat em tempo real</h3>
+                        <p>Chat em tempo real desenvolvido com Node js + Express + Socket.io + HTML + CSS + Javascript Vanilla,Confira o codigo no Github no link abaixo.</p>
+                        <a href="https://github.com/PedroTche/chat"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!---<a href="#" class="btn">See more</a>--->
+        </div>
+    </div>
+
+    <!-------------------------------Contact-------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Entre em Contato</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> pedrotechedevweb@gmail.com</p>
+                    <!---<p><i class="fa-solid fa-square-phone"></i> 0123456789</p>--->
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100056827125629"><i class="fa-brands fa-facebook"></i></a>
+                        <!---<a href="#"><i class="fa-brands fa-square-twitter"></i></a>--->
+                        <a href="https://www.instagram.com/pedrohenriqueteche/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <!---<a href="#"><i class="fa-brands fa-linkedin"></i></a>--->
+                    </div>
+                    <!---<a href="#" download="" class="btn btn2">Download CV</a>--->
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/pedrotechedevweb@gmail.com" method="POST" data-form>
+                        <input id="nome" type="text" name="Name" placeholder="Seu Nome" required>
+                        <input id="email" type="email" name="Email" placeholder="Seu E-Mail" required>
+                        <textarea id="mensagem" name="Message" rows="6" placeholder="Sua Mensagem"></textarea>
+                        <button type="submit" class="btn btn2" data-button>Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Pedro.Made with <i class="fa-solid fa-heart"></i> by Pedro Teche</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
